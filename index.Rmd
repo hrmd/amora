@@ -1,8 +1,12 @@
 ---
-title: "HD2 Relatório"
-author: "HD2"
+title: "HD3 Relatório"
+author: "HD3"
 date: "`r Sys.Date()`"
 output_dir: "."
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
 ---
 
 ## A New Output Format
