@@ -10,11 +10,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta name="author" content="André Leite" />
+<meta name="author" content="HD" />
 
-<meta name="date" content="2021-12-11" />
+<meta name="date" content="2022-02-27" />
 
-<title>Meu Relatório</title>
+<title>HD Relatório</title>
 
 <script src="data:application/javascript;base64,Ly8gUGFuZG9jIDIuOSBhZGRzIGF0dHJpYnV0ZXMgb24gYm90aCBoZWFkZXIgYW5kIGRpdi4gV2UgcmVtb3ZlIHRoZSBmb3JtZXIgKHRvCi8vIGJlIGNvbXBhdGlibGUgd2l0aCB0aGUgYmVoYXZpb3Igb2YgUGFuZG9jIDwgMi44KS4KZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uKGUpIHsKICB2YXIgaHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCJkaXYuc2VjdGlvbltjbGFzcyo9J2xldmVsJ10gPiA6Zmlyc3QtY2hpbGQiKTsKICB2YXIgaSwgaCwgYTsKICBmb3IgKGkgPSAwOyBpIDwgaHMubGVuZ3RoOyBpKyspIHsKICAgIGggPSBoc1tpXTsKICAgIGlmICghL15oWzEtNl0kL2kudGVzdChoLnRhZ05hbWUpKSBjb250aW51ZTsgIC8vIGl0IHNob3VsZCBiZSBhIGhlYWRlciBoMS1oNgogICAgYSA9IGguYXR0cmlidXRlczsKICAgIHdoaWxlIChhLmxlbmd0aCA+IDApIGgucmVtb3ZlQXR0cmlidXRlKGFbMF0ubmFtZSk7CiAgfQp9KTsK"></script>
 
@@ -129,9 +129,9 @@ a.sourceLine {
 
 
 <section class="page-header">
-<h1 class="title toc-ignore project-name">Meu Relatório</h1>
-<h4 class="author project-author">André Leite</h4>
-<h4 class="date project-date">2021-12-11</h4>
+<h1 class="title toc-ignore project-name">HD Relatório</h1>
+<h4 class="author project-author">HD</h4>
+<h4 class="date project-date">2022-02-27</h4>
 </section>
 
 
@@ -140,7 +140,7 @@ a.sourceLine {
 <div id="a-new-output-format" class="section level2">
 <h2>A New Output Format</h2>
 <blockquote>
-<p>Minha frase importante</p>
+<p>Lista de Elementos</p>
 </blockquote>
 <p>Lista:</p>
 <ol style="list-style-type: decimal">
@@ -150,43 +150,40 @@ a.sourceLine {
 </ol>
 <p><strong>Negrito</strong> <em>itálico</em> <code>html</code></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
-<pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 4.1.2</code></pre>
 <pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
-<pre><code>## v ggplot2 3.3.3     v purrr   0.3.4
-## v tibble  3.1.2     v dplyr   1.0.6
+<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
+## v tibble  3.1.2     v dplyr   1.0.8
 ## v tidyr   1.1.3     v stringr 1.4.0
 ## v readr   2.1.1     v forcats 0.5.1</code></pre>
-<pre><code>## Warning: package &#39;readr&#39; was built under R version 4.1.2</code></pre>
-<pre><code>## Warning: package &#39;forcats&#39; was built under R version 4.1.2</code></pre>
 <pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Leitura dos dados</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>survey <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;dados/kaggle_survey_2021_responses.csv&quot;</span>, </span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">locale =</span> <span class="fu">locale</span>())</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Leitura dos dados</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>survey <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;dados/kaggle_survey_2021_responses.csv&quot;</span>, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">locale =</span> <span class="fu">locale</span>())</span></code></pre></div>
 <pre><code>## Rows: 25974 Columns: 369</code></pre>
 <pre><code>## -- Column specification --------------------------------------------------------
 ## Delimiter: &quot;,&quot;
-## chr (369): Time from Start to Finish (seconds), Q1, Q2, Q3, Q4, Q5, Q6, Q7_P...</code></pre>
-<pre><code>## 
+## chr (369): Time from Start to Finish (seconds), Q1, Q2, Q3, Q4, Q5, Q6, Q7_P...
+## 
 ## i Use `spec()` to retrieve the full column specification for this data.
 ## i Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Separação da primeira linha com a descr. da variável</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>descricao_survey <span class="ot">&lt;-</span> survey <span class="sc">%&gt;%</span> </span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="at">n =</span> <span class="dv">1</span>)</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Observações da base</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>survey_limpo <span class="ot">&lt;-</span> survey <span class="sc">%&gt;%</span> </span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="at">n =</span> <span class="dv">2</span><span class="sc">:</span><span class="fu">n</span>()) <span class="co"># n() total de linhas na base</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Separação da primeira linha com a descr. da variável</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>descricao_survey <span class="ot">&lt;-</span> survey <span class="sc">%&gt;%</span> </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="at">n =</span> <span class="dv">1</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Observações da base</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>survey_limpo <span class="ot">&lt;-</span> survey <span class="sc">%&gt;%</span> </span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="at">n =</span> <span class="dv">2</span><span class="sc">:</span><span class="fu">n</span>()) <span class="co"># n() total de linhas na base</span></span></code></pre></div>
 </div>
 <div id="descrição-da-variável-q2-gênero" class="section level2">
 <h2>Descrição da variável Q2: Gênero</h2>
 <div id="tabela" class="section level3">
 <h3>Tabela</h3>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>tabela_genero <span class="ot">&lt;-</span> <span class="fu">arrange</span>(<span class="fu">count</span>(survey_limpo, Q2), <span class="sc">-</span>n)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co">#survey_limpo %&gt;% count(Q2) %&gt;% arrange(-n) %&gt;% kable()</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tabela_genero)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tabela_genero <span class="ot">&lt;-</span> <span class="fu">arrange</span>(<span class="fu">count</span>(survey_limpo, Q2), <span class="sc">-</span>n)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#survey_limpo %&gt;% count(Q2) %&gt;% arrange(-n) %&gt;% kable()</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tabela_genero)</span></code></pre></div>
 <table>
 <thead>
 <tr class="header">
@@ -221,15 +218,15 @@ a.sourceLine {
 <div id="gráfico-de-barras" class="section level3">
 <h3>Gráfico de Barras</h3>
 <p>Meu lindo gráfico de barras a seguir</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>survey_limpo <span class="sc">%&gt;%</span> </span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(Q2) <span class="sc">%&gt;%</span> </span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Q2, n), </span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">y =</span> n, <span class="at">fill =</span> Q2) , </span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>             ) <span class="sc">+</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;Total de Ocorrências&quot;</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Gênero&quot;</span>) <span class="sc">+</span></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">fill =</span> <span class="st">&quot;Gênero&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>survey_limpo <span class="sc">%&gt;%</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(Q2) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Q2, n), </span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">y =</span> n, <span class="at">fill =</span> Q2) , </span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>             ) <span class="sc">+</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;Total de Ocorrências&quot;</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Gênero&quot;</span>) <span class="sc">+</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">fill =</span> <span class="st">&quot;Gênero&quot;</span>)</span></code></pre></div>
 <p><img src="data:image/png;base64,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" /><!-- --></p>
 </div>
 </div>
