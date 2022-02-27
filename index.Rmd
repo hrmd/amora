@@ -11,7 +11,7 @@ output:
 
 ## A New Output Format
 
-> Minha frase importante
+> Lista de Elementos
 
 Lista:
 
