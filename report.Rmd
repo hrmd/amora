@@ -2,7 +2,11 @@
 title: "Relatório"
 author: "Hugo Daher"
 date: "27/02/2022"
-output: html_document
+output_dir: "."
+output:
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
 ---
 
 ```{r setup, include=FALSE}

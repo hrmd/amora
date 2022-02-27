@@ -5,7 +5,8 @@ date: "`r Sys.Date()`"
 output_dir: "."
 output:
   prettydoc::html_pretty:
-    theme: cayman
+    theme: hpstr
+    #old_theme: cayman
     highlight: github
 ---
 
