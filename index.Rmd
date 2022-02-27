@@ -3,11 +3,6 @@ title: "HD2 Relatório"
 author: "HD2"
 date: "`r Sys.Date()`"
 output_dir: "."
-output:
-prettydoc::html_pretty:
-theme: hacker
-highlight: github
-layout: default
 ---
 
 ## A New Output Format
