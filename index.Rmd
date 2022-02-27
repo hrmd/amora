@@ -3,10 +3,10 @@ title: "HD Relatório"
 author: "HD"
 date: "`r Sys.Date()`"
 output_dir: "."
-output:
-  prettydoc::html_pretty:
-    theme: cayman
-    highlight: github
+#output:
+#  prettydoc::html_pretty:
+#    theme: cayman
+#    highlight: github
 ---
 
 ## A New Output Format
@@ -66,8 +66,3 @@ survey_limpo %>%
 
 
 
-## Stay Tuned
-
-Please visit the [development page](https://github.com/yixuan/prettydoc/) of the 
-`prettydoc` package for latest updates and news. Comments, bug reports and
-pull requests are always welcome.
